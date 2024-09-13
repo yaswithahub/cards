@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            align-items: start;
+            justify-content: start;
+            padding: 40px 100px;
+            
+
+            #card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 10px;
+                
+                padding:20px;
+
+                #aboutcard {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    #pic {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        height: 250px;
+                    }
+
+                    #about {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+                        gap: 10px;
+
+                        #title {
+                            font-size: 20px;
+                            color: grey;
+                        }
+
+                        #price {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: end;
+                            gap: 10px;
+
+                            #num {
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+
+                            #onwards {
+                                font-size: 15px;
+                                color: grey;
+                            }
+                        }
+
+                        #delivery {
+                            font-size: 15px;
+                            border: 2px;
+                            color: rgb(97, 97, 115);
+                            background-color: rgb(248, 248, 255);
+                            border-radius: 40px;
+                        }
+
+                        #rating {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+
+                            #rate {
+                                background-color: green;
+                                color: white;
+                                font-size: 20px;
+                                border-radius: 25px;
+                                font-weight: bold;
+                                padding: 5px 15px;
+                                cursor: pointer;
+                            }
+
+                            #reviews {
+                                color: grey;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        
+
+             #card1 {
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: start;
+                 gap: 10px;
+                 
+                 padding: 20px;
+
+                #aboutcard{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    #pic{
+                       display: flex;
+                       flex-direction: column;
+                       align-items: center;
+                       justify-content: center;
+                       cursor: pointer;
+                       height: 250px;
+                    }
+                    #about{
+                         display: flex;
+                         flex-direction: column;
+                         align-items: start;
+                         justify-content: center;
+                         gap: 10px;
+                
+
+                         #title {
+                             font-size: 20px;
+                             color: rgb(212, 205, 205);
+                         }
+
+                        #price {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+
+                            #num {
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+
+                           #onwards {
+                               font-size: 15px;
+                               color: grey;
+                            }
+
+                        }
+ 
+                        #delivery {
+                            font-size: 15px;
+                            border: 2px;
+                            color: rgb(97, 97, 115);
+                            background-color: rgb(248, 248, 255);
+                            border-radius: 40px;
+                        }
+
+                        #rating {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+
+                        #rate {
+                            background-color: gainsboro;
+                            color: blue;
+                            font-size: 20px;
+                            border-radius: 30px;
+                            font-weight: bold;
+                            padding: 5px 15px;
+
+                        }
+
+                        #reviews {
+                            color: grey;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="cards">
+        <div id="card">
+            <div id="aboutcard">
+                <div id="pic">
+
+
+                    <img src="https://images.meesho.com/images/products/9873168/b6f05_400.webp" alt="" height="200px"
+                        width="200px">
+
+                </div>
+                <div id="about">
+                    <div id="title">Classy Head Showers</div>
+
+                    <div id="price">
+                        <div id="num">₹94</div>
+                        <div id="onwards">onwards</div>
+                    </div>
+                    <div id="delivery">Free Delivery</div>
+
+                    <div id="rating">
+                        <input type="button" id="rate" value="3.8">
+                        <div id="reviews">59601 Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card">
+            <div id="aboutcard">
+                <div id="pic">
+
+
+                    <img src="https://images.meesho.com/images/products/6067041/jakvg_400.webp" alt="" height="200px"
+                        width="200px">
+                </div>
+                <div id="about">
+                    <div id="title">Useful Extensions Boards</div>
+                    <div id="price">
+                        <div id="num">₹144</div>
+                        <div id="onwards">onwards</div>
+                    </div>
+                    <div id="delivery">Free Delivery</div>
+
+                    <div id="rating">
+                        <input type="button" id="rate" value="3.7">
+                        <div id="reviews">106227 Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="card1">
+            <div id="aboutcard">
+               <div id="pic">
+
+
+                <img src="https://images.meesho.com/images/products/438227659/okdne_400.webp" alt="" height="200px"
+                    width="200px">
+                </div>
+                <div id="about">
+                    <div id="title">Designer Fabouls Womenwear</div>
+                    <div id="price">
+                      <div id="num">₹193</div>
+                      <div id="onwards">onwards</div>
+                    </div>
+                    <div id="delivery">Free Delivery</div>
+
+                    <div id="rating">
+                      <input type="button" id="rate" value="2.8">
+                      <div id="reviews">supplier</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card1">
+           <div id="aboutcard">
+               <div id="pic">
+
+
+                <img src="https://images.meesho.com/images/products/425441140/mmop2_400.webp" alt="" height="200px"
+                    width="200px">
+
+                </div>
+                <div id="about">
+                    <div id="title">Diva Fancy jewellery sets</div>
+                    <div id="price">
+                        <div id="num">₹216</div>
+                        <div id="onwards">onwards</div>
+                    </div>
+                    <div id="delivery">Free Delivery</div>
+
+                    <div id="rating">
+                        <input type="button" id="rate" value="3.4">
+                        <div id="reviews">7 Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card">
+            <div id="aboutcard">
+                <div id="pic">
+
+
+                <img src="https://images.meesho.com/images/products/19266100/3a686_400.webp" alt="" height="200px"
+                    width="200px">
+                </div>
+                <div id="about">
+                    <div id="title">Modern sev Makers</div>
+                    <div id="price">
+                        <div id="num">₹163</div>
+                        <div id="onwards">onwards</div>
+                    </div>
+                    <div id="delivery">Free Delivery</div>
+
+                    <div id="rating">
+                        <input type="button" id="rate" value="3.8">
+                        <div id="reviews">1119 Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card">
+            <div id="aboutcard">
+                <div id="pic">
+
+
+                <img src="https://images.meesho.com/images/products/4309801/1_400.webp" alt="" height="200px"
+                    width="200px">
+                 </div>
+                <div id="about">
+                    <div id="title">Useful Home&Kitchen Utensils</div>
+                    <div id="price">
+                        <div id="num">₹91</div>
+                        <div id="onwards">onwards</div>
+                    </div>
+                    <div id="delivery">Free Delivery</div>
+
+                    <div id="rating">
+                         <input type="button" id="rate" value="4.2">
+                         <div id="reviews">35561 Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card">
+            <div id="aboutcard">
+                <div id="pic">
+
+                <img src="https://images.meesho.com/images/products/44446830/avsyh_400.webp" alt="" height="200px"
+                    width="200px">
+
+                </div>
+                <div id="about">
+                    <div id="title">Trendy Sensational Women Wear</div>
+                    <div id="price">
+                        <div id="num">₹109</div>
+                        <div id="onwards">onwards</div>
+                    </div>
+                    <div id="delivery">Delivery ₹61 <strike>₹70</strike></div>
+
+                    <div id="rating">
+                        <input type="button" id="rate" value="3.6">
+                        <div id="reviews">69545 Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card">
+            <div id="aboutcard">
+                <div id="pic">
+
+
+                <img src="https://images.meesho.com/images/products/137796271/rzic1_400.webp" alt="" height="200px"
+                    width="200px">
+
+                </div>
+                <div id="about">
+                    <div id="title">Chitraleka Superior Sarees</div>
+                    <div id="price">
+                       <div id="num">₹288</div>
+                       <div id="onwards">onwards</div>
+                    </div>
+                    <div id="delivery">Free Delivery</div>
+
+                    <div id="rating">
+                        <input type="button" id="rate" value="4.2">
+                        <div id="reviews">69545 Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card">
+            <div id="aboutcard">
+                <div id="pic">
+
+                <img src="https://images.meesho.com/images/products/129258335/9ulu1_400.webp" alt="" height="200px"
+                    width="200px">
+                </div>
+                <div id="about">
+                    <div id="title">Fancy Fashionable Women Wear</div>
+                    <div id="price">
+                       <div id="num">₹283</div>
+                       <div id="onwards">onwards</div>
+                    </div>
+                    <div id="delivery">Free Delivery</div>
+
+                    <div id="rating">
+                        <input type="button" id="rate" value="3.7">
+                        <div id="reviews">17187 Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card">
+            <div id="aboutcard">
+
+                <div id="pic">
+                <img src="https://images.meesho.com/images/products/107725974/97h5n_400.webp" alt="" height="200px"
+                    width="200px">
+
+                </div>
+                <div id="about">
+                    <div id="title">Latest Sports Watches</div>
+                    <div id="price">
+                        <div id="num">₹155 <strike>₹170</strike></div>
+                        <div id="onwards">9% off </div>
+                    </div>
+                    <div id="delivery">Free Delivery</div>
+
+                    <div id="rating">
+                        <input type="button" id="rate" value="4.0">
+                        <div id="reviews">201234 Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card">
+            <div id="aboutcard">
+                <div id="pic">
+
+                <img src="https://images.meesho.com/images/products/1853963/1_400.webp" alt="" height="200px"
+                    width="200px">
+                </div>
+                <div id="about">
+                    <div id="title">Georgette Printed Sarees</div>
+                    <div id="price">
+                        <div id="num">₹244</div>
+                        <div id="onwards">onwards </div>
+                    </div>
+                    <div id="delivery">Free Delivery</div>
+
+                    <div id="rating">
+                        <input type="button" id="rate" value="3.8">
+                        <div id="reviews">11932 Reviews</div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div id="card">
+            <div id="aboutcard">
+                <div id="pic">
+                <img src="https://images.meesho.com/images/products/6566794/plzbn_400.webp" alt="" height="200px"
+                    width="200px">
+                </div>
+                <div id="about">
+                    <div id="title">Free Maskelite Bejeweled set</div>
+                    <div id="price">
+                       <div id="num">₹140</div>
+                       <div id="onwards">onwards </div>
+                    </div>
+                    <div id="delivery">Free Delivery</div>
+
+                    <div id="rating">
+                       <input type="button" id="rate" value="4.2">
+                       <div id="reviews">23451 Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
